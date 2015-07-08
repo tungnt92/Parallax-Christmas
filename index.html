@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chrismas Parallax</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <script type="application/javascript" src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+
+<script>
+  var nice = false;
+
+  $(document).ready(function() {
+    nice = $("html").niceScroll();
+  });
+  
+  var obj = window;//$(window);
+  
+  console.log(obj.length);
+  console.log("selector" in obj);
+  
+</script>
+</head>
+
+<body class="loaded">
+<main>
+    <div id="scrollPosition" style="position:fixed; z-index:5;"></div>
+	<section id="slide1" style="height:9500px">
+		<div class="bcg"></div>
+        <div id="scrollBaby"></div>
+        <div id="tree">
+        
+        <div class="item pot" style="opacity:0; transform:translateY(-800px);">
+        	<img src="img/img_pot.png">
+        </div>
+        <div class="item shadow" style="opacity:0; transform:scale(0.6);">
+        	<img src="img/img_shadow.png">
+        </div>
+        <div class="item trunk" style="opacity:0; transform:scale(0.3,0.6);">
+        	<img src="img/img_trunk.png">
+        </div>
+        <div class="item tree1" style="opacity:0; transform:scale(0.3); bottom:71px">
+        	<img src="img/img_tree-p1.png">
+        </div>
+        <div class="item tree2" style="opacity:0; transform:scale(0.3); bottom:71px">
+        	<img src="img/img_tree-p2.png">
+        </div>
+        <div class="item tree3" style="opacity:0; transform:scale(0.3); bottom:71px">
+        	<img src="img/img_tree-p3.png">
+        </div>
+        <div class="item tree4" style="opacity:0; transform:scale(0.3);">
+        	<img src="img/img_tree-p4.png">
+        </div>
+        <div class="item vrthythm" style="opacity:0;">
+        	<img src="img/img_vrhythm.png">
+        </div>
+        	
+        </div>
+    </section>
+    <section id="slide-2" style="height:20700px">
+        <div class="section-wrapper">
+            <div class="bcg" style="background-color: rgb(255, 255, 255);"></div>
+            <div class="bcg2" style="width: 0%;"></div>
+            <div id="tree2" style="opacity:1"></div>
+            <div id="lights" style="opacity:0"></div>
+            <div id="star" style="opacity:0; transform:scale(0.6);"></div>
+            
+            <div id="bauble15" class="bauble purple" style="opacity:0; transform: translateY(-780px);"></div>
+            <div id="bauble14" class="bauble yellow" style="opacity:0; transform: translateY(-900px);"></div>
+            <div id="bauble13" class="bauble red" style="opacity:0; transform: translateY(-820px);"></div>
+            <div id="bauble12" class="bauble blue" style="opacity:0; transform: translateY(-820px);"></div>
+            <div id="bauble11" class="bauble red" style="opacity:0; transform: translateY(-900px);"></div>
+            <div id="bauble10" class="bauble blue" style="opacity:0; transform: translateY(-780px);"></div>
+            <div id="bauble9" class="bauble purple" style="opacity:0; transform: translateY(-800px);"></div>
+            <div id="bauble8" class="bauble yellow" style="opacity:0; transform: translateY(-900px);"></div>
+            <div id="bauble7" class="bauble blue" style="opacity:0; transform: translateY(-820px);"></div>
+            <div id="bauble6" class="bauble yellow" style="opacity:0; transform: translateY(-750px);"></div>
+            <div id="bauble5" class="bauble purple" style="opacity:0; transform: translateY(-690px);"></div>
+            <div id="bauble4" class="bauble purple" style="opacity:0; transform: translateY(-580px);"></div>
+            <div id="bauble3" class="bauble yellow" style="opacity:0; transform: translateY(-650px);"></div>
+            <div id="bauble2" class="bauble red" style="opacity:0; transform: translateY(-620px);"></div>
+            <div id="bauble1" class="bauble blue" style="opacity:0; transform: translateY(-600px);"></div>
+            
+            <div id="candy1" class="candy" style="transform: translateY(-780px) rotate(30deg);"></div>
+            <div id="candy4" class="candy candyL" style="transform: translateY(-710px) rotate(-25deg);"></div>
+            <div id="candy3" class="candy candyL" style="transform: translateY(-790px);"></div>
+            <div id="candy2" class="candy" style="transform: translateY(-750px) rotate(-45deg);"></div>
+            
+            <div id="present3" style="opacity: 0; transform: scale(0.6);"></div>
+            <div id="present5" style="opacity: 0; transform: scale(0.6);"></div>
+            <div id="present2" style="opacity: 0; transform: scale(0.6);"></div>
+            <div id="present4" style="opacity: 0; transform: scale(0.6);"></div>
+            <div id="present1" style="opacity: 0; transform: scale(0.6);"></div>
+            <div id="tung" style="opacity:1; transform: scale(0) rotate(40deg);"></div>
+        </div>
+        
+    </section>
+    
+</main>
+	<script type="application/javascript" src="js/main.js"></script>
+</body>
+</html>
